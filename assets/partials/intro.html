@@ -1,0 +1,19 @@
+<p style="text-align: right; margin-bottom: 0;">
+  <a href="http://www.ssau.ru/english/" target="_blank" rel="noopener"><img src="/assets/images/ssau.png" style="width: 50%; max-width: 500px;"></a>
+</p>
+<h1>Hello there!</h1>
+<p>Welcome to SUCTF 2025!</p>
+<p>SUCTF 2025 is an open cybersecurity competition organised by the <a href="http://www.ssau.ru/english/education/institutes_faculties/ime/" target="_blank" rel="noopener">Institute of Informatics, Mathematics and Electronics of Samara University</a>.</p>
+<p>Student teams from any university are invited to participate. At the end of the competition, the top three ranked teams representing Samara University will be awarded symbolic and valuable prizes.</p>
+<% if (contest.state === 1) { %>
+<p>The competition starts on <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SUCTF+2025+%2F+start&iso=20250523T15" target="_blank" rel="noopener">May 23 at 15:00 UTC</a> and lasts 48 hours.</p>
+<% } %>
+<% if (contest.state === 2 || contest.state === 3) { %>
+<p>The competition has already started and will finish on <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SUCTF+2025+%2F+finish&iso=20250525T15" target="_blank" rel="noopener">May 25 at 15:00 UTC</a>.</p>
+<% } %>
+<% if (contest.state === 4) { %>
+<p>The competition has finished on <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=SUCTF+2025+%2F+finish&iso=20250525T15" target="_blank" rel="noopener">May 25 at 15:00 UTC</a>.</p>
+<% } %>
+<% if (contest.state !== 4) { %>
+<p>Interested? Read the <a href="/about" target="_blank" rel="noopener">rules</a> and <a href="/team/signup">sign up</a> to take part in the competition!</p>
+<% } %>
